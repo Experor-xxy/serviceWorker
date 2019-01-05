@@ -1,0 +1,9 @@
+body{
+    background: #ccc
+}
+#app{
+    min-width: 100px;
+    min-height: 100px;
+    background: yellow;
+    border: 10px solid purple;
+}
