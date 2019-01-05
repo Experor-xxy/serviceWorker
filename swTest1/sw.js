@@ -6,10 +6,10 @@ self.addEventListener('install', function (event) {
         caches.open(VERSION).then(function (cache) {
             console.log('install',event)
             return cache.addAll([
-                '/swTest1/index.html',
-                '/swTest1/main.css',
-                '/swTest1/main.js',
-                '/swTest1/boy.jpg',
+                './index.html',
+                './main.css',
+                './main.js',
+                './boy.jpg',
                 // '/swTest1/test.json',
             ]);
         })
