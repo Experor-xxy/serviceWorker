@@ -2,6 +2,6 @@
 if ('serviceWorker' in navigator) {
     // 为了保证首屏渲染性能，可以在页面 load 完之后注册 Service Worker
     window.onload = function () {
-        navigator.serviceWorker.register('/swTest2/sw.js');
+        navigator.serviceWorker.register('/serviceWorker/swTest2/sw2.js');
     };
 }
