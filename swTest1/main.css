@@ -4,6 +4,6 @@ body{
 #app{
     min-width: 100px;
     min-height: 100px;
-    background: yellow;
+    background: rgb(0, 183, 255);
     border: 10px solid purple;
 }

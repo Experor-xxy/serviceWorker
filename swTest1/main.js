@@ -1,8 +1,7 @@
 console.log('main.js执行')
 if ('serviceWorker' in navigator) {
-    alert('支持SW')
     window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/serviceWorker/swTest1/sw.js', { scope: '/serviceWorker/swTest1/' })
+        navigator.serviceWorker.register('/swTest1/sw.js', { scope: '/swTest1/' })
             .then(function (registration) {
                 console.log('注册成功');
                 var serviceWorker;

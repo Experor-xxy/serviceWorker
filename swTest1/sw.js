@@ -2,6 +2,7 @@ var VERSION = 'my-test-cache-v1';
 
 // 确保 Service Worker 不会在 waitUntil() 里面的代码执行完毕之前安装完成。
 self.addEventListener('install', function (event) {
+    self.skipWaiting()
     event.waitUntil(
         caches.open(VERSION).then(function (cache) {
             console.log('install',event)
