@@ -6,7 +6,7 @@ self.addEventListener('install', function (event) {
         caches.open(VERSION).then(function (cache) {
             console.log('install',event)
             return cache.addAll([
-                '/',
+                './',
                 './index.html',
                 './main.css',
                 './main.js',
